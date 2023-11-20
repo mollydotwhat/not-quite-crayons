@@ -55,7 +55,7 @@ function init(){
         userLogo.drawShape();
         finalProduct = userLogo.allTogether();
         // finalProduct = JSON.stringify(finalProduct);
-        fs.writeFile("logo.svg", finalProduct, (err) =>
+        fs.writeFile("logoResult.svg", finalProduct, (err) =>
         err ? console.log(err) : console.log('Success!')
         );
       })
