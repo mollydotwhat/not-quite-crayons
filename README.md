@@ -5,3 +5,4 @@ Create a console program that will draw according to user input. User chooses ba
 
 ![Screenshot of terminal](./terminalexample.png)
 ![Screenshot of logo](./logoexample.png)
+[Link to screencastify](https://watch.screencastify.com/v/T1OJewoZePEQxtKee20T)
