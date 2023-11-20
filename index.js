@@ -54,7 +54,10 @@ function init(){
         userLogo.writeText();
         userLogo.drawShape();
         finalProduct = userLogo.allTogether();
-        fs.writeFile('logo.svg', finalProduct);
+        // finalProduct = JSON.stringify(finalProduct);
+        fs.writeFile("logo.svg", finalProduct, (err) =>
+        err ? console.log(err) : console.log('Success!')
+        );
       })
 
 };
