@@ -9,7 +9,7 @@ function init(){
         //shape color. type: input
         //text (three letters). type: input
         // text color. type: input
-    var userDesign = async inquirer.prompt([
+    inquirer.prompt([
         {
             type: list,
             name: shapeChoice,
@@ -48,8 +48,9 @@ function init(){
                 "pink"
             ]
         }
-    ]);
-
+    ]).then( response => {
+        //var userDesign
+      })
     const userShapeChoice = userDesign.shapeChoice;
     const shapeColorChoice = userDesign.shapeColor;
     const textChoice = userDesign.logoText;
