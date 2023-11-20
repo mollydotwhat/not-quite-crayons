@@ -9,7 +9,7 @@ function init(){
         //shape color. type: input
         //text (three letters). type: input
         // text color. type: input
-    inquirer.prompt([
+    var userDesign = async inquirer.prompt([
         {
             type: list,
             name: shapeChoice,
