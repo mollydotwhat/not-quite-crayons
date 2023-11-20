@@ -53,11 +53,10 @@ function init(){
         const userLogo = new SVG(userShapeChoice, shapeColorChoice, textChoice, textColorChoice);
         userLogo.writeText();
         userLogo.drawShape();
-       
+        finalProduct = userLogo.allTogether();
+        fs.writeFile('logo.svg', finalProduct);
       })
-      finalProduct = userLogo.allTogether();
-      fs.writeFile('logo.svg', finalProduct);
- 
+
 };
 
 init();
