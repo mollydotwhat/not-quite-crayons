@@ -7,13 +7,8 @@ function init(){
     
     inquirer.prompt([
         {
-            type: input,
-            name: logoText,
-            message: 'Choose up to three letters for your logo text',
-        },
-        {
-            type: list,
-            name: shapeChoice,
+            type: 'list',
+            name: 'shapeChoice',
             message: 'Choose a shape for your logo badge',
             choices: [
                 "Circle",
@@ -22,8 +17,8 @@ function init(){
             ]
         },
         {
-            type: list,
-            name: shapeColor,
+            type: 'list',
+            name: 'shapeColor',
             message: 'Choose a background color',
             choices: [
                 "red",
@@ -35,8 +30,13 @@ function init(){
             ]
         },
         {
-            type: list,
-            name: textColor,
+            type: 'input',
+            name: 'logoText',
+            message: 'Choose up to three letters for your logo text',
+        },
+        {
+            type: 'list',
+            name: 'textColor',
             message: 'Choose a text color',
             choices: [
                 "white",
