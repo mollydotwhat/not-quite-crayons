@@ -7,11 +7,13 @@ describe('Circle', () => {
         it('should produce circle HTML', () => {
             const greenCircle = new Circle("green","circle");
 
-            // expect(greenCircle).toEqual(`<circle cx="150" cy="100" r="80" fill="green" />`);
+            //expect(greenCircle).toEqual(`<circle cx="150" cy="100" r="80" fill="*" />`);
             //green comes out as an object? not sure why yet. template literal didn't help.
+            //think mocking function is what i need
 
             //test to isolate expecting green
-            expect(greenCircle.color == "green")
+            expect(greenCircle.color == "green");
+
         })
     })
 });
