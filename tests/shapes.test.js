@@ -11,3 +11,13 @@ describe('Circle', () => {
         })
     })
 });
+
+describe('Square', () => {
+    describe('render', () => {
+
+        it('should produce blue square html', () => {
+            const blueSquare = new Square("blue", "square").render();
+            expect(blueSquare).toEqual(`<rect x="70" y="20" width="160" height="160" fill="blue" />`)
+        });
+    });
+});
